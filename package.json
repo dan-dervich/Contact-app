@@ -1,0 +1,22 @@
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "16.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dan-dervich/Contact-app.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1"
+  }
+}
