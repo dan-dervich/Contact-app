@@ -2,11 +2,13 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const AhavahContact = require("./ahavah");
+const afwContact = require("./afw");
 // const sendScheduledMails = require("./wps-clients");
 
 app.use(express.json());
 app.use(cors());
 app.use("/ahavah", AhavahContact);
+app.use("/afw", afwContact)
 // app.use("/scheduled", sendScheduledMails);
 
 app.get("/", (req, res) => {
