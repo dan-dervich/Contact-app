@@ -21,7 +21,7 @@ router.post("/send-mail", (req, res) => {
   // setup email data with unicode symbols
   let mailOptions = {
     from: process.env.AHAVAHEMAIL, // sender address
-    to: "dandervich@gmail.com", // list of receivers
+    to: "sales@allforwater.com", // list of receivers
     replyTo: req.body.email,
     subject: "CONTACTO", // Subject line
     html: `<p>Nombre: ${req.body.name}</p><br/> <p>Email: ${req.body.email}</p><br/> <p>Telefono: ${req.body.tel}</p><br/> <p>Mensaje: ${req.body.msg}</p><br/>`, // html body
