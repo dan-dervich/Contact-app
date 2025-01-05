@@ -21,7 +21,7 @@ let transporter = nodemailer.createTransport({
 router.post("/send-mail", (req, res) => {
   // setup email data with unicode symbols
   let mailOptions = {
-    from: process.env.AHAVAHEMAIL, // sender address
+    from: process.env.AFWEMAIL, // sender address
     to: "sales@allforwater.com", // list of receivers
     replyTo: req.body.email,
     subject: "CONTACTO", // Subject line
