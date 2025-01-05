@@ -10,10 +10,11 @@ router.use(cors());
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "netsol-smtp-oxcs.hostingplatform.com",
+  port: 587,
   auth: {
-    user: process.env.AHAVAHEMAIL,
-    pass: process.env.AHAVAHKEY,
+    user: process.env.AFWEMAIL,
+    pass: process.env.AFWPASS,
   },
 });
 
