@@ -25,7 +25,7 @@ router.post("/send-mail", (req, res) => {
     to: "sales@allforwater.com", // list of receivers
     replyTo: req.body.email,
     subject: "CONTACT", // Subject line
-    html: `<p>Nombre: ${req.body.name}</p><br/> <p>Email: ${req.body.email}</p><br/> <p>Telefono: ${req.body.tel}</p><br/> <p>Mensaje: ${req.body.msg}</p><br/>`, // html body
+    html: `<p>Name: ${req.body.name}</p><br/> <p>Email: ${req.body.email}</p><br/> <p>Telephone: ${req.body.tel}</p><br/> <p>Message: ${req.body.msg}</p><br/>`, // html body
   };
   sendEmail(mailOptions, transporter, res);
 });
