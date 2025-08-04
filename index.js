@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/ahavah", AhavahContact);
 app.use("/afw", afwContact)
+app.use("/doctor-agua", require("./doctor-agua"));
 // app.use("/scheduled", sendScheduledMails);
 
 app.get("/", (req, res) => {
